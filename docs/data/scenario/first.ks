@@ -15,6 +15,8 @@
 [link target=*tag_3] →ステージ3 [endlink][r]
 [s]
 
+[cm]
+
 *tag_1
 
 [cm]
