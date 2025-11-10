@@ -15,8 +15,6 @@
 [link target=*tag_3] →ステージ3 [endlink][r]
 [s]
 
-[cm]
-
 *tag_1
 
 [cm]
@@ -54,35 +52,58 @@
 
 *tag_3
 
+[cm]
+
 [bg storage=m3.png time=500]
 いざ世界最高峰の頂へ！　[l][r]
+
+なんだか遠くに動く白い影が見える[l][r]
 
 [if exp="complete < 1"]
 【イエティに襲われ遭難】[l][cm]
 [jump target=*start]
 
 [else]
+
+はぁ、気のせいか。[l][r]
+この先は凍りついた斜面で難しそうだ。[l][r]
+
 [if exp="complete < 10"]
 【滑り落ちて遭難】[l][cm]
 [jump target=*start]
 
 [else]
+
+ふぅ、なんとか通れたぞ。[l][r]
+あ、猛吹雪だ。[l][r]
+
 [if exp="complete < 30"]
 【低体温で遭難】[l][cm]
 [jump target=*start]
 
 [else]
+
+避難できてよかった。[l][r]
+まずい、雪崩の音！[l][r]
+
 [if exp="complete < 80"]
 【雪崩で遭難】[l][cm]
 [jump target=*start]
 
 [else]
+
+間一髪回避したぞ、時間ぎれになるかもな。[l][r]
+
 [if exp="complete < 90"]
 【なんとか撤退】[l][cm]
 
 [else]
 よかったね[l]
-【 登頂成功】[l][cm]
+【登頂成功】[l][cm]
 
+[endif]
+[endif]
+[endif]
+[endif]
 [endif]
 [jump target=*start]
